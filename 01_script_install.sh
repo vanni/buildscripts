@@ -22,6 +22,20 @@ echo "    1. Installing System Updates... this may take a while...be patient."
         printf "\r"
 sleep 2s
 echo "    2. Installing System Updates... completed."
+echo ""
+echo ""
+
+echo "Let's figure out which OS / Distro you are running."
+echo ""
+echo ""
+echo "    From some basic information on your system, you appear to be running: "
+echo "        " $(lsb_release -i)
+echo "        " $(lsb_release -d)
+echo "        " $(lsb_release -r)
+echo "        " $(lsb_release -c)
+echo ""
+echo ""
+PS3="Please select the number for your OS / distro: "
 
 #cd /mnt
 #mkdir {downloads,incomplete,move,nzb,share,tmp,torrent}
